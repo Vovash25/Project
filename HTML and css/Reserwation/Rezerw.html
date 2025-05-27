@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Globe Travel Dashboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background-color: #f4f6fa;
+      color: #1f2937;
+    }
+
+    header {
+      background-color: #111827;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-left, .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    .nav-left h1 {
+      font-size: 1.25rem;
+      font-weight: 600;
+    }
+
+        nav a::before {
+      margin-right: 6px;
+    }
+
+    nav a:nth-child(1)::before { content: "📅"; }
+    nav a:nth-child(2)::before { content: "🧭"; }
+    nav a:nth-child(3)::before { content: "🎫"; }
+    
+    .nav-right img {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+    }
+
+    main {
+      padding: 2rem;
+    }
+
+    .welcome {
+      margin-bottom: 1.5rem;
+    }
+
+    .welcome h2 {
+      font-size: 1.5rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .stats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .stat-box {
+      background: white;
+      padding: 1rem 1.5rem;
+      border-radius: 10px;
+      flex: 1 1 200px;
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+
+    .section-title {
+      font-weight: 600;
+      margin-bottom: 1rem;
+      font-size: 1.25rem;
+    }
+
+    .upcoming-trips {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .trip-item {
+      background: white;
+      padding: 1rem;
+      border-radius: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .trip-info {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+
+    .trip-info h4 {
+      font-weight: 600;
+    }
+
+    .trip-info span {
+      color: #6b7280;
+    }
+
+    .btn {
+      background-color: #111827;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .offers {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .offer-card {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .offer-img {
+      height: 150px;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .offer-content {
+      padding: 1rem;
+    }
+
+    .offer-content h4 {
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+    }
+
+    .offer-content span {
+      color: #6b7280;
+      display: block;
+      margin-bottom: 1rem;
+    }
+
+    .btn-offer {
+      background-color: #111827;
+      color: white;
+      text-align: center;
+      padding: 0.5rem;
+      text-decoration: none;
+      border-radius: 0 0 10px 10px;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav-left">
+      <h1>🌐 Globe Travel</h1>
+      <nav>
+        <a href="#" style="color: white; text-decoration: none; margin-right: 1rem;">Dashboard</a>
+        <a href="#" style="color: white; text-decoration: none; margin-right: 1rem;">Wycieczki</a>
+        <a href="#" style="color: white; text-decoration: none;">Rezerwacje</a>
+      </nav>
+    </div>
+    <div class="nav-right">
+      <img src="user-avatar.png" alt="Profil">
+    </div>
+  </header>
+
+  <main>
+    <div class="welcome">
+      <h2>Witaj, Jan 👋</h2>
+      <p>Sprawdź swoje nadchodzące podróże i nowe oferty.</p>
+    </div>
+
+    <div class="stats">
+      <div class="stat-box">
+        <strong>Aktywne rezerwacje</strong>
+        <span>3</span>
+      </div>
+      <div class="stat-box">
+        <strong>Ulubione</strong>
+        <span>12</span>
+      </div>
+      <div class="stat-box">
+        <strong>Punkty lojalnościowe</strong>
+        <span>2,450</span>
+      </div>
+    </div>
+
+    <div>
+      <div class="section-title">Nadchodzące podróże</div>
+      <div class="upcoming-trips">
+        <div class="trip-item">
+          <div class="trip-info">
+            <h4>🏔️ Alpy Szwajcarskie</h4>
+            <span>14–21 maja 2025</span>
+          </div>
+          <button class="btn">Szczegóły</button>
+        </div>
+        <div class="trip-item">
+          <div class="trip-info">
+            <h4>🏝️ Malediwy</h4>
+            <span>1–8 czerwca 2025</span>
+          </div>
+          <button class="btn">Szczegóły</button>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="section-title">Polecane wycieczki</div>
+      <div class="offers">
+        <div class="offer-card">
+          <div class="offer-img" style="background-image: url('greckie-wyspy.jpg');"></div>
+          <div class="offer-content">
+            <h4>Greckie wyspy</h4>
+            <span>10 dni | od 3,999 PLN</span>
+          </div>
+          <a href="#" class="btn-offer">Zobacz ofertę</a>
+        </div>
+
+        <div class="offer-card">
+          <div class="offer-img" style="background-image: url('safari-kenia.jpg');"></div>
+          <div class="offer-content">
+            <h4>Safari w Kenii</h4>
+            <span>7 dni | od 5,999 PLN</span>
+          </div>
+          <a href="#" class="btn-offer">Zobacz ofertę</a>
+        </div>
+
+        <div class="offer-card">
+          <div class="offer-img" style="background-image: url('japonia-miasta.jpg');"></div>
+          <div class="offer-content">
+            <h4>Japońskie miasta</h4>
+            <span>14 dni | od 8,999 PLN</span>
+          </div>
+          <a href="#" class="btn-offer">Zobacz ofertę</a>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
