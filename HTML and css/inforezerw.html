@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zarządzanie rezerwacjami – Globe Travel</title>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="nav-left">
+      <h1>🌐 Globe Travel</h1>
+      <nav>
+        <a href="#">Dashboard</a>
+        <a href="#">Wycieczki</a>
+        <a href="#">Rezerwacje</a>
+      </nav>
+    </div>
+    <div class="nav-right">
+      <a href="#" class="cart-icon" title="Koszyk"></a>
+      <img src="user-avatar.png" alt="Profil" />
+    </div>
+  </header>
+
+  <main class="container">
+    <section style="flex: 2; min-width: 0;">
+      <h2 class="manage-header">Zarządzanie rezerwacjami</h2>
+      <p class="manage-subtext">Przeglądaj i zarządzaj swoimi rezerwacjami</p>
+
+      <div class="manage-box">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
+          <h3 style="font-size: 1.2rem; font-weight: 600;">Aktywne rezerwacje</h3>
+          <div style="display: flex; gap: 0.5rem;">
+            <button class="btn">Filtruj</button>
+            <button class="btn" style="background: white; color: #111827; border: 1px solid #d1d5db;">Sortuj</button>
+          </div>
+        </div>
+
+        <!-- Rezerwacja 1 -->
+        <div class="cart-item cart-row">
+          <img src="alpy.jpg" alt="Alpy" class="booking-img">
+          <div class="cart-info">
+            <h4>Alpy Szwajcarskie – Zimowa Przygoda</h4>
+            <small>📅 15–21 stycznia 2025</small>
+            <small>👥 2 osoby</small>
+            <small>💰 8,999 PLN</small>
+          </div>
+          <div><span class="status-badge status-confirmed">Potwierdzona</span></div>
+        </div>
+        <div class="manage-actions">
+          <button class="btn">Zmień termin</button>
+          <button class="btn" style="background: white; border: 1px solid #d1d5db; color: #111827;">Anuluj</button>
+          <button class="btn" style="background: white; border: 1px solid #d1d5db; color: #111827;">Kontakt</button>
+        </div>
+
+        <!-- Rezerwacja 2 -->
+        <div class="cart-item cart-row" style="margin-top: 2rem;">
+          <img src="malediwy.jpg" alt="Malediwy" class="booking-img">
+          <div class="cart-info">
+            <h4>Malediwy – Rajska Plaża</h4>
+            <small>📅 1–8 marca 2025</small>
+            <small>👥 2 osoby</small>
+            <small>💰 12,499 PLN</small>
+          </div>
+          <div><span class="status-badge status-pending">W realizacji</span></div>
+        </div>
+        <div class="manage-actions">
+          <button class="btn">Zmień termin</button>
+          <button class="btn" style="background: white; border: 1px solid #d1d5db; color: #111827;">Anuluj</button>
+          <button class="btn" style="background: white; border: 1px solid #d1d5db; color: #111827;">Kontakt</button>
+        </div>
+      </div>
+    </section>
+
+    <aside style="flex: 1; min-width: 280px; display: flex; flex-direction: column; gap: 1.5rem;">
+    <div class="notification-box">
+        <h4>Powiadomienia</h4>
+
+        <div class="notification-entry">
+        <i class="fas fa-info-circle"></i>
+        <div>
+            Zbliża się termin Twojej wycieczki do Alp Szwajcarskich
+            <small>2 dni temu</small>
+        </div>
+        </div>
+
+        <div class="notification-entry">
+        <i class="fas fa-check-circle"></i>
+        <div>
+            Potwierdzono płatność za wycieczkę na Malediwy
+            <small>5 dni temu</small>
+        </div>
+        </div>
+    </div>
+
+    <div class="support-box">
+        <h4>Wsparcie</h4>
+        <button class="support-button"><i class="fas fa-comments"></i> Czat z konsultantem</button>
+        <div class="phone-box"><i class="fas fa-phone"></i> +48 123 456 789</div>
+    </div>
+    </aside>
+
+  </main>
+</body>
+</html>

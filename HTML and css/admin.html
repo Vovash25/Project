@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panel Administratora – Globe Travel</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="nav-left">
+      <h1>🌐 Globe Travel Admin</h1>
+      <nav>
+        <a href="#">Dashboard</a>
+        <a href="#">Wycieczki</a>
+        <a href="#">Klienci</a>
+      </nav>
+    </div>
+    <div class="nav-right">
+      <img src="user-avatar.png" alt="Profil" />
+    </div>
+  </header>
+
+  <main class="container">
+    <section style="flex: 2; min-width: 0;">
+    <h2 class="manage-header">Panel Administratora</h2>
+    <p class="manage-subtext">Zarządzaj ofertami i monitoruj sprzedaż</p>
+    <div class="admin-grid">
+      <div class="admin-card">
+        <h3>Aktywne wycieczki <i class="fas fa-plane-departure"></i></h3>
+        <div class="value">156</div>
+        <div class="change">+12% vs poprzedni miesiąc</div>
+      </div>
+      <div class="admin-card">
+        <h3>Rezerwacje <i class="fas fa-ticket-alt"></i></h3>
+        <div class="value">89</div>
+        <div class="change">+8% vs poprzedni miesiąc</div>
+      </div>
+      <div class="admin-card">
+        <h3>Przychód <i class="fas fa-chart-line"></i></h3>
+        <div class="value">458,920 PLN</div>
+        <div class="change">+15% vs poprzedni miesiąc</div>
+      </div>
+      <div class="admin-card">
+        <h3>Klienci <i class="fas fa-users"></i></h3>
+        <div class="value">2,456</div>
+        <div class="change">+5% vs poprzedni miesiąc</div>
+      </div>
+    </div>
+
+    <div class="admin-layout">
+      <div class="admin-section">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <h4>Zarządzanie wycieczkami</h4>
+          <button class="plus-btn"><i class="fas fa-plus"></i> Dodaj wycieczkę</button>
+        </div>
+
+        <div class="trip-entry">
+          <h5>Alpy Szwajcarskie – Zimowa Przygoda</h5>
+          <small><i class="fas fa-calendar-alt"></i> 15–21 stycznia 2025</small>
+          <small><i class="fas fa-tag"></i> 8,999 PLN</small>
+          <div class="tools">
+            <i class="fas fa-pen" title="Edytuj"></i>
+            <i class="fas fa-trash" title="Usuń"></i>
+          </div>
+        </div>
+
+        <div class="trip-entry">
+          <h5>Malediwy – Rajska Plaża</h5>
+          <small><i class="fas fa-calendar-alt"></i> 1–8 marca 2025</small>
+          <small><i class="fas fa-tag"></i> 12,499 PLN</small>
+          <div class="tools">
+            <i class="fas fa-pen" title="Edytuj"></i>
+            <i class="fas fa-trash" title="Usuń"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="admin-section">
+        <h4>Szybkie akcje</h4>
+        <div class="quick-actions" style="display: flex; flex-direction: column; gap: 0.75rem;">
+          <button>+ Nowa wycieczka <i class="fas fa-chevron-right"></i></button>
+          <button>+ Nowy klient <i class="fas fa-chevron-right"></i></button>
+          <button>📄 Raporty <i class="fas fa-chevron-right"></i></button>
+        </div>
+
+        <h4 style="margin-top: 2rem;">Ostatnia aktywność</h4>
+        <div class="activity-log">
+          <div class="log-entry">
+            <i class="fas fa-circle"></i> Dodano nową wycieczkę: Hiszpania
+            <small>2 godziny temu</small>
+          </div>
+          <div class="log-entry">
+            <i class="fas fa-circle"></i> Zatwierdzono rezerwację #2458
+            <small>4 godziny temu</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

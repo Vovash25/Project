@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Koszyk – Globe Travel</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="nav-left">
+      <h1>🌐 Globe Travel</h1>
+      <nav>
+        <a href="#">Dashboard</a>
+        <a href="#">Wycieczki</a>
+        <a href="#">Rezerwacje</a>
+      </nav>
+    </div>
+    <div class="nav-right">
+      <a href="#" class="cart-icon" title="Koszyk"></a>
+      <img src="user-avatar.png" alt="Profil" />
+    </div>
+  </header>
+
+  <div class="cart-header">
+    <h2>Twój koszyk</h2>
+    <p>2 wycieczki</p>
+  </div>
+
+  <main class="cart-page">
+    <div class="cart-list">
+      <div class="cart-item">
+        <div class="cart-details">
+          <img src="alpy.jpg" alt="Alpy">
+          <div class="cart-info">
+            <h4>Alpy Szwajcarskie – Zimowa Przygoda</h4>
+            <small>📍 Szwajcaria • 15–21 stycznia 2025</small>
+            <div class="cart-select">
+              Liczba osób
+            <select>
+            <option>1 osoba</option>
+            <option>2 osoby</option>
+            <option>3 osoby</option>
+            <option>4 osoby</option>
+            </select>
+            </div>
+          </div>
+        </div>
+        <div class="cart-price">
+          7,998 PLN
+        </div>
+        <div class="remove-btn" title="Usuń">🗑️</div>
+      </div>
+
+      <div class="cart-item">
+        <div class="cart-details">
+          <img src="malediwy.jpg" alt="Malediwy">
+          <div class="cart-info">
+            <h4>Malediwy – Rajska Plaża</h4>
+            <small>📍 Malediwy • 1–8 marca 2025</small>
+            <div class="cart-select">
+              Liczba osób
+            <select>
+            <option>1 osoba</option>
+            <option>2 osoby</option>
+            <option>3 osoby</option>
+            <option>4 osoby</option>
+            </select>
+            </div>
+          </div>
+        </div>
+        <div class="cart-price">
+          11,998 PLN
+        </div>
+        <div class="remove-btn" title="Usuń">🗑️</div>
+      </div>
+    </div>
+
+    <aside class="cart-summary">
+      <h3>Podsumowanie</h3>
+      <div class="summary-row">
+        <span>Alpy Szwajcarskie (2 osoby)</span>
+        <span>7,998 PLN</span>
+      </div>
+      <div class="summary-row">
+        <span>Malediwy (2 osoby)</span>
+        <span>11,998 PLN</span>
+      </div>
+      <div class="summary-row">
+        <span>Ubezpieczenie</span>
+        <span>600 PLN</span>
+      </div>
+      <div class="summary-row">
+        <span>Razem</span>
+        <span>20,596 PLN</span>
+      </div>
+      <button>Przejdź do płatności</button>
+      <a href="#">Kontynuuj zakupy</a>
+    </aside>
+  </main>
+</body>
+</html>

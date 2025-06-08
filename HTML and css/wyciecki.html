@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Globe Travel</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <div class="nav-left">
+      <h1>🌐 Globe Travel</h1>
+      <nav>
+        <a href="#">Dashboard</a>
+        <a href="#">Wycieczki</a>
+        <a href="#">Rezerwacje</a>
+      </nav>
+    </div>
+    <div class="nav-right">
+      <a href="#" class="cart-icon" title="Koszyk"></a>
+      <img src="user-avatar.png" alt="Profil" />
+    </div>
+  </header>
+
+  <div class="filters">
+    <input type="text" placeholder="Szukaj wycieczki..." />
+    <select>
+      <option>Wszystkie lokalizacje</option>
+    </select>
+    <select>
+      <option>Sortuj według</option>
+    </select>
+    <button>Filtry</button>
+  </div>
+
+  <div class="cards">
+    <div class="card">
+      <div class="tag">Last Minute</div>
+      <img src="alpy.jpg" alt="Alpy Szwajcarskie" />
+      <div class="title-price">
+        <div>Alpy Szwajcarskie</div>
+        <div>3,999 PLN</div>
+      </div>
+      <div class="info">📍 Szwajcaria • 7 dni</div>
+      <p>Odkryj piękno Alp Szwajcarskich podczas tej niezapomnianej wycieczki. W programie hiking, kolejki górskie i lokalna kuchnia.</p>
+      <button>Zarezerwuj</button>
+    </div>
+
+    <div class="card">
+      <img src="malediwy.jpg" alt="Malediwy" />
+      <div class="title-price">
+        <div>Malediwy</div>
+        <div>8,999 PLN</div>
+      </div>
+      <div class="info">📍 Ocean Indyjski • 10 dni</div>
+      <p>Rajskie plaże, krystalicznie czysta woda i luksusowe resorty. Idealna propozycja na romantyczny wypoczynek.</p>
+      <button>Zarezerwuj</button>
+    </div>
+
+    <div class="card">
+      <div class="tag">Bestseller</div>
+      <img src="japonia.jpg" alt="Japonia Express" />
+      <div class="title-price">
+        <div>Japonia Express</div>
+        <div>12,999 PLN</div>
+      </div>
+      <div class="info">📍 Japonia • 14 dni</div>
+      <p>Tokio, Kioto, Osaka – poznaj największe miasta Japonii. W programie świątynie, ogrody i nowoczesna technologia.</p>
+      <button>Zarezerwuj</button>
+    </div>
+  </div>
+
+  <div class="pagination">
+    <button>&lt;</button>
+    <button class="active">1</button>
+    <button>2</button>
+    <button>3</button>
+    <button>&gt;</button>
+  </div>
+
+</body>
+</html>

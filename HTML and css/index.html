@@ -7,38 +7,34 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-<body>
+<body class="login-page">
   <div class="login-container">
-    <form class="login-box">
-      <div class="icon-circle">
-        <i class="fas fa-globe"></i>
-      </div>
-      <h2>Globe Travel</h2>
-      <p>Zaloguj się do swojego konta</p>
+    <h2><i class="fas fa-globe"></i> Globe Travel</h2>
+    <p>Zaloguj się do swojego konta</p>
 
+    <form>
       <label for="email">E-mail *</label>
       <div class="input-icon">
         <i class="fas fa-envelope"></i>
-        <input type="email" id="email" placeholder="twoj@email.com" required>
+        <input type="email" id="email" placeholder="twoj@email.com" required />
       </div>
 
       <label for="password">Hasło *</label>
       <div class="input-icon">
         <i class="fas fa-lock"></i>
-        <input type="password" id="password" required>
+        <input type="password" id="password" required />
       </div>
 
-      <button type="submit" class="login-btn">
-        <i class="fas fa-sign-in-alt"></i> Zaloguj się
-      </button>
+      <button type="submit" class="login-btn"><i class="fas fa-sign-in-alt"></i> Zaloguj się</button>
 
       <a href="#" class="forgot">Zapomniałeś hasła?</a>
 
       <div class="divider">Lub zaloguj się przez</div>
+
       <div class="social-login">
-        <button><i class="fab fa-facebook-f"></i></button>
-        <button><i class="fab fa-google"></i></button>
-        <button><i class="fab fa-apple"></i></button>
+        <button title="Facebook"><i class="fab fa-facebook-f"></i></button>
+        <button title="Google"><i class="fab fa-google"></i></button>
+        <button title="Apple"><i class="fab fa-apple"></i></button>
       </div>
 
       <p class="register">Nie masz konta? <a href="#">Zarejestruj się</a></p>

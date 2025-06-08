@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Globe Travel Dashboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="nav-left">
+      <h1>🌐 Globe Travel</h1>
+      <nav>
+        <a href="#">Dashboard</a>
+        <a href="#">Wycieczki</a>
+        <a href="#">Rezerwacje</a>
+      </nav>
+    </div>
+    <div class="nav-right">
+      <a href="#" class="cart-icon" title="Koszyk"></a>
+      <img src="user-avatar.png" alt="Profil" />
+    </div>
+  </header>
+
+  <main>
+    <div class="welcome">
+      <h2>Witaj, Jan 👋</h2>
+      <p>Sprawdź swoje nadchodzące podróże i nowe oferty.</p>
+    </div>
+
+    <div class="stats">
+      <div class="stat-box">
+        <strong>Aktywne rezerwacje</strong>
+        <span>3</span>
+      </div>
+      <div class="stat-box">
+        <strong>Ulubione</strong>
+        <span>12</span>
+      </div>
+      <div class="stat-box">
+        <strong>Punkty lojalnościowe</strong>
+        <span>2,450</span>
+      </div>
+    </div>
+
+    <div>
+      <div class="section-title">Nadchodzące podróże</div>
+      <div class="upcoming-trips">
+        <div class="trip-item">
+          <div class="trip-info">
+            <h4>🏔️ Alpy Szwajcarskie</h4>
+            <span>14–21 maja 2025</span>
+          </div>
+          <button class="btn">Szczegóły</button>
+        </div>
+        <div class="trip-item">
+          <div class="trip-info">
+            <h4>🏝️ Malediwy</h4>
+            <span>1–8 czerwca 2025</span>
+          </div>
+          <button class="btn">Szczegóły</button>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="section-title">Polecane wycieczki</div>
+      <div class="offers">
+        <div class="offer-card">
+          <div class="offer-img" style="background-image: url('greckie-wyspy.jpg');"></div>
+          <div class="offer-content">
+            <h4>Greckie wyspy</h4>
+            <span>10 dni | od 3,999 PLN</span>
+          </div>
+          <a href="#" class="btn-offer">Zobacz ofertę</a>
+        </div>
+
+        <div class="offer-card">
+          <div class="offer-img" style="background-image: url('safari-kenia.jpg');"></div>
+          <div class="offer-content">
+            <h4>Safari w Kenii</h4>
+            <span>7 dni | od 5,999 PLN</span>
+          </div>
+          <a href="#" class="btn-offer">Zobacz ofertę</a>
+        </div>
+
+        <div class="offer-card">
+          <div class="offer-img" style="background-image: url('japonia-miasta.jpg');"></div>
+          <div class="offer-content">
+            <h4>Japońskie miasta</h4>
+            <span>14 dni | od 8,999 PLN</span>
+          </div>
+          <a href="#" class="btn-offer">Zobacz ofertę</a>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

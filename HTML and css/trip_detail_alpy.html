@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Alpy Szwajcarskie – Szczegóły</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="nav-left">
+      <h1>🌐 Globe Travel</h1>
+      <nav>
+        <a href="#">Dashboard</a>
+        <a href="#">Wycieczki</a>
+        <a href="#">Rezerwacje</a>
+      </nav>
+    </div>
+    <div class="nav-right">
+      <a href="#" class="cart-icon" title="Koszyk"></a>
+      <img src="user-avatar.png" alt="Profil" />
+    </div>
+  </header>
+
+
+  <main class="container">
+    <div style="flex: 2; min-width: 0;">
+      <img src="alpy.jpg" alt="Alpy Szwajcarskie" class="trip-img" />
+
+      <section class="block">
+        <div class="section-title"><span class="emoji">📄</span>Opis wycieczki</div>
+        <p>Odkryj magię zimowych Alp Szwajcarskich podczas tej niezapomnianej 7-dniowej przygody. Nasza wycieczka łączy w sobie aktywny wypoczynek na stokach narciarskich z relaksem w malowniczych górskich kurortach.</p>
+        <div class="info-grid">
+          <div>🏔️ Najwyższy punkt<br><strong>3,466 m</strong></div>
+          <div>🎿 Trasy narciarskie<br><strong>220 km</strong></div>
+          <div>👨‍👩‍👧‍👦 Wielkość grupy<br><strong>max 12 osób</strong></div>
+          <div>🍽️ Wyżywienie<br><strong>HB</strong></div>
+        </div>
+      </section>
+
+      <section class="block">
+        <div class="section-title"><span class="emoji">🗓️</span>Program wycieczki</div>
+        <p><strong>Dzień 1</strong> – Przylot i zakwaterowanie<br>Transfer z lotniska, zakwaterowanie w hotelu, spotkanie organizacyjne.</p>
+        <p><strong>Dzień 2–5</strong> – Jazda na nartach<br>Codzienna jazda na nartach, instruktaż, wieczorne atrakcje.</p>
+        <p><strong>Dzień 6</strong> – Wycieczka do Zurychu<br>Zwiedzanie miasta, czas wolny na zakupy.</p>
+        <p><strong>Dzień 7</strong> – Powrót<br>Wykwaterowanie, transfer na lotnisko, powrót do kraju.</p>
+      </section>
+
+      <section class="opinion">
+        <div class="section-title">
+          <span class="emoji">💬</span>Opinie (128)
+          <button class="add-opinion-btn" style="margin-left:auto;">Dodaj opinię</button>
+        </div>
+
+        <div>
+          <div style="display: flex; align-items: center; gap: 0.5rem;">
+            <img src="user-avatar.png" alt="Anna" class="avatar">
+            <strong>Anna Kowalska</strong>
+          </div>
+          <span class="stars">★★★★★</span><br>
+          <p>Wspaniała wycieczka! Świetna organizacja, profesjonalni instruktorzy i przepiękne widoki. Polecam!</p>
+        </div>
+      </section>
+
+    </div>
+
+    <aside>
+      <div style="font-size: 1.5rem; font-weight: bold;">3,999 PLN<span style="font-size: 0.9rem;">/osoba</span></div>
+
+      <label for="termin" style="display: block; margin-top: 1rem;">Wybierz termin</label>
+      <select id="termin" style="width: 100%; padding: 0.5rem; margin-top: 0.3rem;">
+        <option>15–21 stycznia 2025</option>
+        <option>29 stycznia – 4 lutego 2025</option>
+      </select>
+
+      <label for="osoby" style="display: block; margin-top: 1rem;">Liczba osób</label>
+      <select id="osoby" style="width: 100%; padding: 0.5rem; margin-top: 0.3rem;">
+        <option>1 osoba</option>
+        <option>2 osoby</option>
+      </select>
+
+      <button style="margin-top: 1rem; width: 100%; background: #1f2937; color: white; padding: 0.75rem; border: none; border-radius: 6px;">Zarezerwuj teraz</button>
+      <button style="margin-top: 0.5rem; width: 100%; background: transparent; border: 1px solid #d1d5db; padding: 0.75rem; border-radius: 6px;">Dodaj do koszyka</button>
+
+      <div style="margin-top: 1rem; font-size: 0.9rem;">
+        <p>3,999 PLN × 2 osoby = <strong>7,998 PLN</strong></p>
+        <p>Ubezpieczenie: <strong>300 PLN</strong></p>
+        <p style="margin-top: 0.5rem; font-weight: bold;">Razem: 8,298 PLN</p>
+      </div>
+    </aside>
+  </main>
+</body>
+</html>
