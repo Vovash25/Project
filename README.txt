@@ -1,10 +1,10 @@
-# 🌐 Globe Travel – System rezerwacji wycieczek
+#  Globe Travel – System rezerwacji wycieczek
 
 Kompletny projekt strony internetowej do zarządzania wycieczkami z rozróżnieniem ról użytkowników.
 
 ---
 
-## 📌 Funkcjonalności
+##  Funkcjonalności
 
 - Rejestracja użytkowników (rola domyślna: klient)
 - Logowanie z przekierowaniem w zależności od roli (admin lub użytkownik)
@@ -14,18 +14,16 @@ Kompletny projekt strony internetowej do zarządzania wycieczkami z rozróżnien
 
 ---
 
-## 📁 Struktura projektu
+## Struktura projektu
 
 ```
 globe_travel/
 ├── index.html          <- strona logowania
-├── register.html       <- formularz rejestracji
 ├── admin.html          <- panel administratora
 ├── Rezerw.html         <- panel użytkownika
 ├── styles.css          <- stylizacja globalna
 ├── db.php              <- konfiguracja bazy danych
 ├── login.php           <- obsługa logowania
-├── register.php        <- obsługa rejestracji
 ├── logout.php          <- wylogowanie
 └── test.php            <- test połączenia z bazą
 ```
@@ -70,7 +68,7 @@ Zmień port `3307` jeśli używasz innego.
 
 ---
 
-## 🚀 Uruchomienie aplikacji
+##  Uruchomienie aplikacji
 
 1. Skopiuj folder `globe_travel/` do `C:/xampp/htdocs/`
 2. W XAMPP uruchom:
@@ -84,7 +82,7 @@ http://localhost/globe_travel/index.html
 
 ---
 
-## 👤 Konto administratora
+##  Konto administratora
 
 Możesz ręcznie ustawić użytkownika jako administratora:
 
@@ -94,7 +92,7 @@ UPDATE uzytkownicy SET RolaID = 1 WHERE Email = 'admin@globe.com';
 
 ---
 
-## 🧪 Test połączenia z bazą
+##  Test połączenia z bazą
 
 Otwórz:
 ```
@@ -105,6 +103,6 @@ Powinieneś zobaczyć komunikat `Połączono z bazą!`
 
 ---
 
-## 📄 Autorzy
+##  Autorzy
 Martynenko Mykhailo
 Vyshnovetskii Volodymyr
