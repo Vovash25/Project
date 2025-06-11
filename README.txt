@@ -1,10 +1,10 @@
-# 🌐 Globe Travel – System rezerwacji wycieczek
+# Globe Travel – System rezerwacji wycieczek
 
 Kompletny projekt strony internetowej do zarządzania wycieczkami z rozróżnieniem ról użytkowników.
 
 ---
 
-## ✨ Funkcjonalności
+## Funkcjonalności
 
 - Rejestracja użytkowników (rola domyślna: klient)
 - Logowanie z przekierowaniem w zależności od roli (admin / użytkownik)
@@ -14,7 +14,7 @@ Kompletny projekt strony internetowej do zarządzania wycieczkami z rozróżnien
 
 ---
 
-## 📁 Struktura projektu
+## Struktura projektu
 
 ```
 globe_travel/
@@ -32,7 +32,7 @@ globe_travel/
 
 ---
 
-## 🛠 Wymagania
+## Wymagania
 
 - XAMPP (Apache + MySQL lub MariaDB)
 - Przeglądarka (Chrome, Firefox)
@@ -40,7 +40,7 @@ globe_travel/
 
 ---
 
-## 🧱 Konfiguracja bazy danych
+## Konfiguracja bazy danych
 
 1. Uruchom MySQL w XAMPP
 2. Otwórz phpMyAdmin lub Workbench
@@ -50,7 +50,7 @@ globe_travel/
 
 ---
 
-## ⚙️ Konfiguracja połączenia – `db.php`
+## Konfiguracja połączenia – `db.php`
 
 ```php
 <?php
@@ -71,12 +71,12 @@ Zmodyfikuj port, jeśli używasz innego (np. `3306`, `3308`).
 
 ---
 
-## 🚀 Uruchomienie
+##  Uruchomienie
 
 1. Umieść cały folder projektu w `C:/xampp/htdocs/globe_travel/`
 2. W XAMPP uruchom:
-   - Apache ✅
-   - MySQL ✅
+   - Apache 
+   - MySQL 
 3. Otwórz w przeglądarce:
 
 ```
@@ -85,7 +85,7 @@ http://localhost/globe_travel/index.html
 
 ---
 
-## 👤 Konto administratora
+## Konto administratora
 
 Aby nadać użytkownikowi rolę administratora, użyj w MySQL:
 
@@ -97,7 +97,7 @@ Użytkownik z `RolaID = 1` będzie przekierowany do `admin.html`.
 
 ---
 
-## 🧪 Test połączenia z bazą
+## Test połączenia z bazą
 
 Aby sprawdzić połączenie z MySQL, otwórz w przeglądarce:
 
@@ -109,7 +109,7 @@ Powinieneś zobaczyć komunikat: `Połączono z bazą!`
 
 ---
 
-## 👨‍💻 Autorzy
+## Autorzy
 
 - Martynenko Mykhailo
 - Vyshnovetskii Volodymyr
