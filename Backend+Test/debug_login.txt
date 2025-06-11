@@ -1,0 +1,117 @@
+Działa login.php
+🔥 start login.php
+🔥 start login.php
+🔥 start login.php
+⚙️ próba połączenia z DB
+❌ Błąd połączenia: Unknown database 'globe_travel'
+🔥 start login.php
+⚙️ próba połączenia z DB
+✅ Połączenie z DB OK
+✅ DB included
+📩 Email: user1@globe.com | Hasło: user123
+📥 Query executed
+👤 Użytkownik znaleziony
+🔐 Hasło z bazy: $2y$10$jeVL3GcyuKwK9vX0sY9JBOnZ2cfECav.Q6ZT9vbmD/Rn.B2I.D/MW
+🔍 password_verify: NIE
+🔥 start login.php
+⚙️ próba połączenia z DB
+✅ Połączenie z DB OK
+✅ DB included
+📩 Email: user1@globe.com | Hasło: $2y$10$jeVL3GcyuKwK9vX0sY9JBOnZ2cfECav.Q6ZT9vbmD/Rn.B2I.D/MW
+📥 Query executed
+👤 Użytkownik znaleziony
+🔐 Hasło z bazy: $2y$10$jeVL3GcyuKwK9vX0sY9JBOnZ2cfECav.Q6ZT9vbmD/Rn.B2I.D/MW
+🔍 password_verify: NIE
+🔥 start login.php
+⚙️ próba połączenia z DB
+✅ Połączenie z DB OK
+✅ DB included
+📩 Email: user1@globe.com | Hasło: user123
+📥 Query executed
+👤 Użytkownik znaleziony
+🔐 Hasło z bazy: $2y$10$jeVL3GcyuKwK9vX0sY9JBOnZ2cfECav.Q6ZT9vbmD/Rn.B2I.D/MW
+🔍 password_verify: NIE
+🔥 start login.php
+⚙️ próba połączenia z DB
+✅ Połączenie z DB OK
+✅ DB included
+📩 Email: user1@globe.com | Hasło: user123
+📥 Query executed
+👤 Użytkownik znaleziony
+🔐 Hasło z bazy: $2y$10$jeVL3GcyuKwK9vX0sY9JBOnZ2cfECav.Q6ZT9vbmD/Rn.B2I.D/MW
+🔍 password_verify: NIE
+🔥 start login.php
+⚙️ próba połączenia z DB
+✅ Połączenie z DB OK
+✅ DB included
+📩 Email: admin@globe.com | Hasło: 1234adminHASH
+📥 Query executed
+👤 Użytkownik znaleziony
+🔐 Hasło z bazy: 1234adminHASH
+🔍 password_verify: NIE
+🔥 start login.php
+⚙️ próba połączenia z DB
+✅ Połączenie z DB OK
+✅ DB included
+📩 Email: admin@globe.com | Hasło: admin123
+📥 Query executed
+👤 Użytkownik znaleziony
+🔐 Hasło z bazy: $2y$10$A3i63tfEFkzIDAl/4abSOe2QQaS2A5zF27hUDmhWdvO2jRU0i1Zm2
+🔍 password_verify: NIE
+🔥 start login.php
+⚙️ próba połączenia z DB
+✅ Połączenie z DB OK
+✅ DB included
+📩 Email: admin@globe.com | Hasło: admin123
+📥 Query executed
+👤 Użytkownik znaleziony
+🔐 Hasło z bazy: $2y$10$3bOZTcrE9QY4PbPNvZw18.hGqVjzoCVi4Mz7S5crDJDE6PXzNdr2y
+🔍 password_verify: NIE
+🔥 start login.php
+⚙️ próba połączenia z DB
+✅ Połączenie z DB OK
+✅ DB included
+📩 Email: admin@globe.com | Hasło: admin123
+📥 Query executed
+👤 Użytkownik znaleziony
+🔐 Hasło z bazy: $2y$10$3bOZTcrE9QY4PbPNvZw18.hGqVjzoCVi4Mz7S5crDJDE6PXzNdr2y
+🔍 password_verify: NIE
+🔥 start login.php
+⚙️ próba połączenia z DB
+✅ Połączenie z DB OK
+✅ DB included
+📩 Email: user@globe.com | Hasło: user123
+✅ _POST = array (
+  'email' => 'user@globe.com',
+  'password' => 'user123',
+)
+📥 Query executed
+👤 Użytkownik znaleziony
+🔐 Hasło z bazy: user123
+🔍 password_verify: TAK
+🔥 start login.php
+⚙️ próba połączenia z DB
+✅ Połączenie z DB OK
+✅ DB included
+📩 Email: user@globe.com | Hasło: user123
+✅ _POST = array (
+  'email' => 'user@globe.com',
+  'password' => 'user123',
+)
+📥 Query executed
+👤 Użytkownik znaleziony
+🔐 Hasło z bazy: user123
+🔍 password_verify: TAK
+🔥 start login.php
+⚙️ próba połączenia z DB
+✅ Połączenie z DB OK
+✅ DB included
+📩 Email: admin@globe.com | Hasło: admin123
+✅ _POST = array (
+  'email' => 'admin@globe.com',
+  'password' => 'admin123',
+)
+📥 Query executed
+👤 Użytkownik znaleziony
+🔐 Hasło z bazy: admin123
+🔍 password_verify: TAK
