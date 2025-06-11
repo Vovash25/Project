@@ -1,30 +1,32 @@
-#  Globe Travel – System rezerwacji wycieczek
+# 🌐 Globe Travel – System rezerwacji wycieczek
 
 Kompletny projekt strony internetowej do zarządzania wycieczkami z rozróżnieniem ról użytkowników.
 
 ---
 
-##  Funkcjonalności
+## ✨ Funkcjonalności
 
 - Rejestracja użytkowników (rola domyślna: klient)
-- Logowanie z przekierowaniem w zależności od roli (admin lub użytkownik)
-- Panel administratora z możliwością podglądu danych
-- Panel użytkownika z rezerwacjami
+- Logowanie z przekierowaniem w zależności od roli (admin / użytkownik)
+- Panel administratora do zarządzania
+- Panel użytkownika z podglądem rezerwacji
 - Obsługa sesji i wylogowania
 
 ---
 
-## Struktura projektu
+## 📁 Struktura projektu
 
 ```
 globe_travel/
-├── index.html          <- strona logowania
+├── index.html          <- formularz logowania
+├── register.html       <- formularz rejestracji (opcjonalnie)
 ├── admin.html          <- panel administratora
 ├── Rezerw.html         <- panel użytkownika
-├── styles.css          <- stylizacja globalna
-├── db.php              <- konfiguracja bazy danych
+├── styles.css          <- stylizacja interfejsu
+├── db.php              <- połączenie z bazą danych
 ├── login.php           <- obsługa logowania
-├── logout.php          <- wylogowanie
+├── logout.php          <- wylogowanie użytkownika
+├── register.php        <- zapis nowego konta (jeśli używane)
 └── test.php            <- test połączenia z bazą
 ```
 
@@ -32,22 +34,23 @@ globe_travel/
 
 ## 🛠 Wymagania
 
-- **XAMPP** (Apache + MySQL)
-- **MySQL Workbench** lub **phpMyAdmin**
-- Przeglądarka
+- XAMPP (Apache + MySQL lub MariaDB)
+- Przeglądarka (Chrome, Firefox)
+- MySQL Workbench lub phpMyAdmin (do importu bazy)
 
 ---
 
-## 🔧 Konfiguracja bazy danych
+## 🧱 Konfiguracja bazy danych
 
-1. Uruchom `phpMyAdmin` lub `MySQL Workbench`
-2. Stwórz bazę danych o nazwie: `globe_travel`
-3. Zaimportuj strukturę z pliku `globe_travel.sql`
-4. Upewnij się, że port bazy danych to `3307` lub `3308`
+1. Uruchom MySQL w XAMPP
+2. Otwórz phpMyAdmin lub Workbench
+3. Utwórz nową bazę danych: `globe_travel`
+4. Zaimportuj plik `globe_travel.sql`
+5. Upewnij się, że port MySQL to `3307` lub `3308`
 
 ---
 
-## ⚙️ Konfiguracja pliku `db.php`
+## ⚙️ Konfiguracja połączenia – `db.php`
 
 ```php
 <?php
@@ -64,17 +67,17 @@ if ($conn->connect_error) {
 ?>
 ```
 
-Zmień port `3307` jeśli używasz innego.
+Zmodyfikuj port, jeśli używasz innego (np. `3306`, `3308`).
 
 ---
 
-##  Uruchomienie aplikacji
+## 🚀 Uruchomienie
 
-1. Skopiuj folder `globe_travel/` do `C:/xampp/htdocs/`
+1. Umieść cały folder projektu w `C:/xampp/htdocs/globe_travel/`
 2. W XAMPP uruchom:
    - Apache ✅
-   - MySQL ✅ (jeśli baza działa lokalnie)
-3. Otwórz przeglądarkę i wpisz:
+   - MySQL ✅
+3. Otwórz w przeglądarce:
 
 ```
 http://localhost/globe_travel/index.html
@@ -82,27 +85,31 @@ http://localhost/globe_travel/index.html
 
 ---
 
-##  Konto administratora
+## 👤 Konto administratora
 
-Możesz ręcznie ustawić użytkownika jako administratora:
+Aby nadać użytkownikowi rolę administratora, użyj w MySQL:
 
 ```sql
 UPDATE uzytkownicy SET RolaID = 1 WHERE Email = 'admin@globe.com';
 ```
 
+Użytkownik z `RolaID = 1` będzie przekierowany do `admin.html`.
+
 ---
 
-##  Test połączenia z bazą
+## 🧪 Test połączenia z bazą
 
-Otwórz:
+Aby sprawdzić połączenie z MySQL, otwórz w przeglądarce:
+
 ```
 http://localhost/globe_travel/test.php
 ```
 
-Powinieneś zobaczyć komunikat `Połączono z bazą!`
+Powinieneś zobaczyć komunikat: `Połączono z bazą!`
 
 ---
 
-##  Autorzy
-Martynenko Mykhailo
-Vyshnovetskii Volodymyr
+## 👨‍💻 Autorzy
+
+- Martynenko Mykhailo
+- Vyshnovetskii Volodymyr
